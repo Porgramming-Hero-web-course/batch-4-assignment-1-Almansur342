@@ -40,12 +40,11 @@ processPayment(100, "cash");
 processPayment(200, "credit"); 
 processPayment(50, "paypal"); 
 processPayment(100, "bitcoin"); 
-
+```
 
 ### Explanation:
 - The Union Type: The PaymentMethod type specifies that a payment method can only be "cash", "credit", or "paypal". Any other value will throw an error.
 - Flexibility with Safety: The processPayment function allows different payment methods while ensuring you can’t accidentally pass an invalid method like "bitcoin".
-
 
 
 
@@ -64,7 +63,6 @@ Intersection types are handy when you need a type that combines properties from 
 - Reuse and extend existing types for cleaner, more maintainable code.
 - Create flexible type combinations without duplicating code.
 - Improve type safety by enforcing all properties and methods are present.
-
 
 
 ### Lets see an example of union type:
@@ -87,12 +85,11 @@ const amphibiousCar: AmphibiousVehicle = {
 };
 
 console.log(amphibiousCar);
-
+```
 ### Explanation:
 The AmphibiousVehicle type is an intersection of Vehicle and Boat.
 The amphibiousCar object includes properties from both Vehicle (wheels and fuel) and Boat (hasSails and capacity).
 This demonstrates how you can use intersection types to define a type that combines features from two distinct categories, ensuring the object adheres to both.
-
 
 
 ## Conclusion:
