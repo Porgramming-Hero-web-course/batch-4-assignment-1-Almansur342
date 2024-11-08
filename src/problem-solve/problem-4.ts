@@ -17,10 +17,4 @@
       return item.height * item.width;
     }
   }
-
-  console.log(calculateShapeArea({
-    shape: "rectangle",
-    width: 4,
-    height: 6,
-  }))
 }
