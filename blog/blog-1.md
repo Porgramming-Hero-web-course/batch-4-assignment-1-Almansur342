@@ -21,6 +21,7 @@ Union types add flexibility to your code without sacrificing safety. Imagine wor
 
 
 ### Lets see an example of union type:
+```typescript
 type PaymentMethod = "cash" | "credit" | "paypal";
 
 function processPayment(amount: number, method: PaymentMethod): void {
@@ -67,6 +68,7 @@ Intersection types are handy when you need a type that combines properties from 
 
 
 ### Lets see an example of union type:
+```typescript
 type Vehicle = {
   wheels: number;
   fuel: string;
